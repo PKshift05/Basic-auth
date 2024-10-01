@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Bệnh Án Ngoại Khoa - 1</title>
+    <link rel="stylesheet" href="HTML/boss.css">
+	<style>
+        body {
+            height: 297mm;
+            width: 210mm;
+            margin: 1px auto;
+        }
+
+        
+
+        widget[type="pdfpreview"] {
+            behavior: pdfpreview;
+            width: 210mm;
+            height: 297mm;
+            border: 1px dotted black;
+            margin-left: -1cm;
+            margin-top: -1cm;
+        }
+
+        widget[type="signature"] {
+            behavior: signature;
+            width: 57mm;
+            height: 20mm;
+        }
+
+        widget[type="dummy"] {
+            width: 50mm;
+            height: 20mm;
+        }
+
+        * {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+        }
+
+        input {
+            font-family: "Times New Roman";
+            font-size: 12pt;
+            background: white;
+            color: black;
+        }
+
+        input:focus {
+            border-bottom: thin dashed black;
+            color: #800000;
+            background: #FFFFCC;
+        }
+
+        #ahihi {
+            outline: none !important;
+            border-bottom: 1px dotted black;
+        }
+
+        textarea {
+            border-bottom: 1px dotted black;
+            resize: inherit;
+            width: 100%;
+            height: 100px;
+        }
+
+        div#first {
+            padding-left: 2%;
+            overflow: auto;
+            width: 97%;
+            font-size: 16px;
+        }
+
+        #italic {
+            font-style: italic;
+        }
+
+        #tab {
+            border: 1px solid rgb(187, 187, 203);
+        }
+
+        #table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #table_top {
+            border-top: 1px solid black;
+        }
+
+        #table_left {
+            border-left: 1px solid black;
+        }
+
+        #table_left_right {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        #table_right {
+            border-right: 1px solid black;
+        }
+
+        #table_bottom {
+            border-bottom: 1px solid black;
+        }
+
+        #table_bottom_left {
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+        }
+
+        #table_bottom_right {
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        #table_bottom_left_right {
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+		#checkbox{
+			border: 1 solid black;
+			height: 5px;
+		}
+    </style>
+</head>
+<body docx="true" postdata="true" xmargin-left="1cm" xmargin-right="1cm" xmargin-top="1cm" xmargin-bottom="1cm"
+	paper-size="A4">
+	<div class="Section1">
+		<table border="0" cellpadding="1" cellspacing="0" width="100%">
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="6"><input type="text" name="coso_yte" size="35"
+						style="text-align:left;"></td>
+				<td width="10%" align="center" rowspan="2" colspan="6"><b
+						style="font-size:20px; text-align: center;">BỆNH ÁN NGOẠI KHOA</b></td>
+				<td width="10%" align="left" colspan="1"></td>
+				<td width="10%" align="left" colspan="4">MS: BA-02</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="6"><input type="text" name="ten_benhvien" size="35"
+						style="text-align:left; font-weight: bold;"></td>
+				<td width="10%" align="left" colspan="1"></td>
+				<td width="10%" align="left" colspan="4">Số lưu trữ: <input type="text" name="so_luutru" size="15"
+						style="text-align:left;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="13"><input type="text" name="khoa_dieutri" size="30"
+						style="text-align:left;">
+					<input type="text" name="giuong" size="50" style="text-align:left;">
+				</td>
+				<td width="10%" align="left" colspan="4"><input type="text" name="ma_yte" size="30" value=""
+						style="text-align:left;"></td>
+			</tr>
+		</table>
+
+		<table border="0" cellpadding="1" cellspacing="0" width="100%">
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="12"><b>I. HÀNH CHÍNH:</b> </td>
+				<td width="10%" align="left" colspan="5">&emsp;&emsp; Số HS: <input type="text" name="sohoso" size="15"
+						style="text-align:left;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="4">1. Họ và tên <i>(In hoa): </i></td>
+				<td width="10%" align="left" colspan="4"><input type="text" name="ten_benhnhan" size="38"></td>
+				<td width="10%" align="left" colspan="3">2. Sinh ngày: </td>
+				<td width="10%" align="left" colspan="3"><input type="text" name="ngay_sinh" size="20"></td>
+				<td width="10%" align="left">Tuổi: </td>
+				<td width="10%" align="left" colspan="2"><input type="text" name="tuoi_benhnhan" size="6"
+						style="text-align: left;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3">3. Giới: </td>
+				<td width="10%" align="left" colspan="5">Nam &ensp;
+					<input type="checkbox" class="checkbox"
+						name="gt_nam"></input>&ensp;&ensp;Nữ &ensp;
+					<input type="checkbox" class="checkbox"
+						name="gt_nu"></input>
+				</td>
+				<td width="10%" align="left" colspan="3">4. Nghề nghiệp: </td>
+				<td width="10%" align="left" colspan="6"><input type="text" name="nghe_nghiep"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3">5. Dân tộc: </td>
+				<td width="10%" align="left" colspan="5"><input type="text" name="dan_toc"
+						style="text-align: left;width: 98%;"></td>
+				<td width="10%" align="left" colspan="3">6. Ngoài kiều: </td>
+				<td width="10%" align="left" colspan="6"><input type="text" name="ngoai_kieu"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3">7. Địa chỉ: </td>
+				<td width="10%" align="left" colspan="5"><input type="text" name="thon_xom"
+						style="text-align: left;width: 98%;"></td>
+				<td width="10%" align="left" colspan="3">Xã, phường: </td>
+				<td width="10%" align="left" colspan="6"><input type="text" name="xa_phuong"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="8">Huyện (Q, Tx): &ensp;<input type="text" name="quan_huyen"
+						style="text-align: left;"></td>
+				<td width="10%" align="left" colspan="3">Tỉnh, TP: </td>
+				<td width="10%" align="left" colspan="6"><input type="text" name="tinh_thanhpho"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="6">8. Nơi làm việc:&ensp;<input type="text" name="noi_lamviec"
+						size="45" style="text-align: left;font-size:12px;"></td>
+				<td width="10%" align="left" colspan="11">9. Đối tượng: <i>1.BHYT </i><input type="checkbox"
+						class="checkbox" name="bhyt"></input>
+					<i>2.Thu phí </i><input type="checkbox" class="checkbox" name="thuphi"></input>
+					<i>3.Miễn </i><input type="checkbox" class="checkbox" name="miengiam"></input>
+					<i>4.Khác </i><input type="checkbox" class="checkbox" name="khac"></input>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="4">10. BHYT giá trị đến: </td>
+				<td width="10%" align="left" colspan="2"><input type="text" name="han_the_den"
+						style="text-align: left;width: 98%;"></td>
+				<td width="10%" align="left" colspan="3">Số thẻ BHYT: </td>
+				<td width="10%" align="left" colspan="8"><input type="text" name="the_bhyt"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="17">11. Họ tên, địa chỉ người nhà khi cần báo tin:&ensp;<input
+						type="text" name="ho_ten_nguoi_than" size="70" style="text-align: left;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="12"><input type="text" name="dia_chi_nguoi_than"
+						style="text-align: left;width: 98%;"> </td>
+				<td width="10%" align="left" colspan="2">Điện thoại số</td>
+				<td width="10%" align="left" colspan="3"><input type="text" name="so_dt_nguoi_than"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="17" #table_bottom><b>II. QUẢN LÝ NGƯỜI BỆNH:</b></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3" #table_left>12. Vào viện:</td>
+				<td width="10%" align="left" colspan="4"><input type="text" name="ngay_vaovien"
+						style="text-align: left;width: 98%;"></td>
+				<td width="10%" align="left" colspan="10" #table_left_right>14. Nơi giới thiệu:
+					<i>1.CQ y tế </i><input type="checkbox" class="checkbox" name="noi_gioi_thieu1"></input>
+					<i>2.Tự đến </i><input type="checkbox" class="checkbox" name="noi_gioi_thieu2"></input>
+					<i>3.Khác </i><input type="checkbox" class="checkbox" name="noi_gioi_thieu3"></input>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_bottom_left>13. Trực tiếp vào:
+					<i>1.KCC</i><input type="checkbox" class="checkbox" name="noi_nhan1"></input>
+					<i>2.KKB</i><input type="checkbox" class="checkbox" name="noi_nhan2"></input>
+					<i>3.Khoa ĐT</i><input type="checkbox" class="checkbox" name="noi_nhan3"></input>
+				</td>
+				<td width="10%" align="left" colspan="10" #table_bottom_left_right>- Vào viện do bệnh này lần thứ:&ensp;
+					<input #table type="text" name="lanvao_vien" size="3" style="text-align: left;">
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="right" colspan="4" #table_left>Khoa</td>
+				<td width="10%" align="right" colspan="3"> <span style="font-size:12px">ngày / tháng / năm
+						&emsp;&ensp;&ensp; Số ngày ĐTr&ensp;</span></td>
+				<td width="10%" align="left" colspan="10" #table_left_right>17. Chuyển viện:
+					<i>1.Tuyến trên</i><input type="checkbox" class="checkbox" name="tuyen_tren"></input>
+					<i>2.Tuyến dưới</i><input type="checkbox" class="checkbox" name="tuyen_duoi"></input>
+					<i>3.CK</i><input type="checkbox" class="checkbox" name="tuyen_chuyenkhoa"></input>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3" #table_left>15. Vào khoa:</td>
+				<td width="10%" align="left" colspan="4">
+					<input #table type="text" name="vao_khoa1" size="10" style="text-align: left;">
+					<input type="text" name="gio_vao1" size="20" style="text-align: left;">
+					<input type="text" name="ngay_dt1" size="6" style="text-align: center;">
+				</td>
+				<td width="10%" align="left" colspan="3" #table_left>- Chuyển đến:</td>
+				<td width="10%" align="left" colspan="7" #table_right><input type="text" name="chuyen_den"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_left></td>
+				<td width="10%" align="left" colspan="10" #table_left_right><input type="text" name="chuyen_den2"
+						style="text-align: left;width: 98%;"></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3" #table_left>16. Chuyển</td>
+				<td width="10%" align="left" colspan="4">
+					<input #table type="text" name="chuyen_khoa2" size="10" style="text-align: left;">
+					<input type="text" name="gio_chuyen2" size="20" style="text-align: left;">
+					<input type="text" name="ngay_dt2" size="6" style="text-align: center;">
+				</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>18. Ra viện: &ensp;<input type="text"
+						name="ngay_ravien" size="40" style="text-align: left;"
+						value=".... giờ.... phút   ngày .... tháng .... năm ....."></td>
+			</tr>
+			<tr>
+				<td width="10%" align="center" colspan="3" #table_left>Khoa&ensp;</td>
+				<td width="10%" align="left" colspan="4">
+					<input #table type="text" name="chuyen_khoa3" size="10" style="text-align: left;">
+					<input type="text" name="gio_chuyen3" size="20" style="text-align: left;">
+					<input type="text" name="ngay_dt3" size="6" style="text-align: center;">
+				</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>&ensp;&ensp;
+					<i>1.Ra viện </i><input type="checkbox" class="checkbox" name="tinhtrang_ravien1"></input>
+					<i>2.Xin về </i><input type="checkbox" class="checkbox" name="tinhtrang_ravien2"></input>
+					<i>3.Bỏ về </i><input type="checkbox" class="checkbox" name="tinhtrang_ravien3"></input>
+					<i>4.Đưa về </i><input type="checkbox" class="checkbox" name="tinhtrang_ravien4"></input>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="center" colspan="3" #table_left>Khoa&ensp;</td>
+				<td width="10%" align="left" colspan="4">
+					<input #table type="text" name="chuyen_khoa4" size="10" style="text-align: left;">
+					<input type="text" name="gio_chuyen4" size="20" style="text-align: left;">
+					<input type="text" name="ngay_dt4" size="6" style="text-align: center;">
+				</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>
+					19. Tổng số ngày điều trị: &ensp;
+					<input #table type="text" name="tong_ngaydt" size="5" style="text-align: left;">
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="17" #table><b>III. CHẨN ĐOÁN:</b></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="5" #table_left>20. Nơi chuyển đến: </td>
+				<td width="10%" align="right" colspan="2"><input #table type="text" name="icd_chuyenden_id" size="12"
+						style="text-align: left;">&ensp;</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>25. Ra viện: </td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_left>
+					<div #first name="icd_chuyenden" type="text"></div>
+				</td>
+				<td width="10%" align="left" colspan="4" #table_left>+ Bệnh chính: </td>
+				<td width="10%" align="right" colspan="6" #table_right><input #table type="text" name="benh_chinh_id"
+						size="12" style="text-align: left;">&ensp; </td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="4" #table_left>21. KKB, Cấp cứu: </td>
+				<td width="10%" align="right" colspan="3"><input #table type="text" name="icd_khoakb_id" size="12"
+						style="text-align: left;">&ensp;</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>
+					<div #first name="benh_chinh" type="text"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="5" #table_left>22. Khi vào khoa điều trị: </td>
+				<td width="10%" align="right" colspan="2"><input #table type="text" name="icd_vaokhoa_id" size="12"
+						style="text-align: left;">&ensp;</td>
+				<td width="10%" align="left" colspan="4" #table_left>+ Bệnh kèm theo: </td>
+				<td width="10%" align="right" colspan="6" #table_right><input #table type="text" name="benh_kem_id"
+						size="12" style="text-align: left;">&ensp;</td>
+			</tr>
+			<tr>
+				<td width="10%" align="right" colspan="7" #table_left>
+					<div #first name="icd_vaokhoa" type="text"></div>
+				</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>
+					<div #first name="benh_kem" type="text"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_left>
+					+ Tai biến &ensp;<input type="checkbox" class="checkbox" name="check_taibien"></input> &emsp;
+					+ Biến chứng &ensp;<input type="checkbox" class="checkbox" name="check_bienchung"></input>
+				</td>
+				<td width="10%" align="left" colspan="6" #table_left>+ Chẩn đoán trước phẫu thuật: </td>
+				<td width="10%" align="right" colspan="4" #table_right><input #table type="text"
+						name="cd_truoc_phauthuat_id" size="12" style="text-align: left;">&ensp; </td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_left>
+					<i>1. Do phẫu thuật</i>
+					<input type="checkbox" class="checkbox" name="check_taibien1"></input>
+					<i>3. Do nhiễm khuẩn</i>
+					<input type="checkbox" class="checkbox" name="check_taibien3"></input>
+				</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>
+					<div #first name="cd_truoc_phauthuat" type="text"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_left>
+					<i>2 .Do gây mê</i>
+					<input type="checkbox" class="checkbox" name="check_taibien2"></input>&ensp;&ensp;&ensp;
+					<i>4. Khác</i>
+					<input type="checkbox" class="checkbox" name="check_taibien4"></input>
+				</td>
+				<td width="10%" align="left" colspan="5" #table_left>+ Chẩn đoán sau phẫu thuật: </td>
+				<td width="10%" align="right" colspan="5" #table_right><input #table type="text"
+						name="cd_sau_phauthuat_id" size="12" style="text-align: left;">&ensp; </td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_left>
+					23. Tổng số ngày điều trị sau phẫu thuật: &ensp;
+					<input #table type="text" name="tong_ngaydt_sauphauthuat" size="5" style="text-align: left;">
+				</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>
+					<div #first name="cd_sau_phauthuat" type="text"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="7" #table_left>
+					24. Tổng số lần phẫu thuật: &ensp;
+					<input #table type="text" name="tong_solan_phauthuat" size="5" style="text-align: left;">
+				</td>
+				<td width="10%" align="left" colspan="10" #table_left_right>
+					<div #first name="cd_sau_phauthuat2" type="text"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="17" #table><b>IV. TÌNH TRẠNG RA VIỆN:</b></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="6" #table_left>26. Kết quả điều trị: </td>
+				<td width="10%" align="left" colspan="11" #table_left_right>27. Tình hình tử vong: <input type="text"
+						name="ngaygio_tuvong" size="40" style="text-align: left;"
+						value=".... giờ.... phút   ngày .... tháng .... năm ....."></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3" #table_left>
+					<i>1. Khỏi </i>
+				</td>
+				<td width="10%" align="right" colspan="1">
+					<input type="checkbox" class="checkbox" name="ketqua_dieutri1"></input>
+				</td>
+				<td width="10%" align="left" colspan="1">
+					<i>4. Nặng hơn </i>
+				</td>
+				<td width="10%" align="left" colspan="1">
+					<input type="checkbox" class="checkbox" name="ketqua_dieutri4"></input>
+				</td>
+				<td width="10%" align="left" colspan="11" #table_left_right>
+					<i>1. Do bệnh </i>&ensp;<input type="checkbox" class="checkbox" name="lydo_tuvong1"></input>
+					&emsp;&ensp;
+					<i>2. Do tai biến điều trị </i>&ensp;<input type="checkbox" class="checkbox"
+						name="lydo_tuvong2"></input>
+					<i>3. Khác </i>&ensp;<input type="checkbox" class="checkbox" name="lydo_tuvong3"></input>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="3" #table_left>
+					<i>2. Đỡ giảm </i>
+				</td>
+				<td width="10%" align="right" colspan="1">
+					<input type="checkbox" class="checkbox" name="ketqua_dieutri2">
+				</td>
+				<td width="10%" align="left" colspan="1">
+					<i>5. Tử vong </i>
+				</td>
+				<td width="10%" align="left" colspan="1">
+					<input type="checkbox" class="checkbox" name="ketqua_dieutri5">
+				</td>
+				<td width="10%" align="left" colspan="11" #table_left_right>
+					<i>1.Trong 24h v/v</i><input type="checkbox" class="checkbox" name="thoigian_tuvong1"></input>
+					&ensp;
+					<i>2.Trong 48h v/v</i><input type="checkbox" class="checkbox"
+						name="thoigian_tuvong2"></input>&emsp;&emsp;
+					<i>3.Trong 72h v/v</i><input type="checkbox" class="checkbox"
+						name="thoigian_tuvong3"></input>&emsp;
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="6" #table_left>
+					<i>3. Không thay đổi </i> &emsp;<input type="checkbox" class="checkbox"
+						name="ketqua_dieutri3"></input>
+				</td>
+				<td width="10%" align="left" colspan="6" #table_left>28. Nguyên nhân chính tử vong: </td>
+				<td width="10%" align="right" colspan="5" #table_right><input #table type="text"
+						name="nguyennhan_tuvong_icd" size="12" style="text-align: left;">&ensp;</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="6" #table_left></td>
+				<td width="10%" align="left" colspan="11" #table_left_right>
+					<div #first name="nguyennhan_tuvong" type="text"></div>
+				</td>
+			</tr>
+			<tr>
+
+				<td width="10%" align="left" colspan="6" #table_left>29. Giải phẫu bệnh <i>(Khi có sinh thiết): </i>
+				</td>
+				<td width="10%" align="left" colspan="11" #table_left_right>
+					30. Khám nghiệm tử thi
+					<input type="checkbox" class="checkbox" name="kham_tuthi"></input>
+					31. Chẩn đoán giải phẫu bệnh tử thi:
+					<input #table type="text" name="gpb_tuthi_icd" size="7" style="text-align: left;">
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" colspan="6" #table_left>
+					<i>1. Lành tính</i>&ensp;<input type="checkbox" class="checkbox" name="gpb_kq1"></input>
+					<i>2. Nghi ngờ</i>&ensp;<input type="checkbox" class="checkbox" name="gpb_kq2"></input>
+					<i>3. Ác tính</i>&ensp;<input type="checkbox" class="checkbox" name="gpb_kq3"></input>
+				</td>
+				<td width="10%" align="right" colspan="11" #table_left_right>
+					<div #first name="gpb_tuthi_cd" type="text"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left" #table_top>&emsp;</td>
+				<td width="10%" align="left" #table_top colspan="5">&emsp;</td>
+				<td width="10%" align="left" #table_top>&emsp;</td>
+				<td width="10%" align="left" #table_top>&emsp;</td>
+				<td width="10%" align="center" #table_top colspan="8"><input type="text" style="font-style: italic; "
+						name="kinh_gui" size="35" /></td>
+				<td width="10%" align="left" #table_top>&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="center" colspan="5"><b>Giám đốc bệnh viện</b></td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="center" colspan="8"><b>Trưởng khoa</b></td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="center" colspan="5"><span>
+						<widget type="signature" name="bangoai1_chukygd" xmargin-left="0.4cm" xmargin-top="0.2cm" />
+					</span></td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="center" colspan="8">
+					<widget type="signature" name="bangoai1_chukytk" xmargin-left="0.4cm" xmargin-top="0.2cm" />
+				</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="center" colspan="5">
+					<div #first name="bangoai1_hoten_gd" type="text" value="Họ và tên: "></div></span>
+				</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="center" colspan="8">
+					<div #first name="bangoai1_hoten_tk" type="text" value="Họ và tên: "></div>
+				</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+		</table>
+	</div>
+	<div name="Page2">
+		<div>
+</body>
+</html>

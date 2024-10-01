@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BỆNH ÁN - 3</title>
+    <link rel="stylesheet" href="HTML/boss.css">
+    <style>
+		body {
+			height: 297mm;
+			width: 210mm;
+			/* to centre page on screen*/
+			margin-bottom: 1px;
+			margin-top: 1px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		
+
+		widget[type="pdfpreview"] {
+			behavior: pdfpreview;
+			width: 210mm;
+			height: 297mm;
+			border: 1px dotted black;
+			margin-left: -1cm;
+			margin-top: -1cm;
+		}
+
+		widget[type="signature"] {
+			behavior: signature;
+			width: 57mm;
+			height: 20mm;
+		}
+
+		widget[type="dummy"] {
+			width: 50mm;
+			height: 20mm;
+		}
+
+		* {
+			font-family: "Times New Roman", Times, serif;
+			font-size: 14px;
+		}
+
+		input {
+			font-family: Times New Roman;
+			font-size: 12.0pt;
+			/*border-bottom: thin dashed black;*/
+			background: white;
+			color: black;
+		}
+
+		/*#input {border-bottom: thin dashed black;}*/
+		input:focus {
+			border-bottom: thin dashed black;
+			color: #800000;
+			background: #FFFFCC;
+		}
+
+		#ahihi {
+			outline: none !important;
+			border-bottom: 1px dotted black;
+		}
+
+		textarea {
+			border-bottom: 1px dotted black;
+			resize: inherit;
+			width: 100%;
+			height: 100px;
+		}
+
+		div#first {
+			padding-left: 2%;
+			overflow: auto;
+			height: min-intrinsic;
+			width: 97%;
+			font-size: 16px;
+		}
+
+		div#first:focus {
+			outline: none !important;
+			box-shadow: #22ACE4;
+			width: 97%;
+			background: #FFFFCC;
+		}
+
+		div#first:disabled {
+			background: #FFFFFF;
+		}
+
+		div#first:enabled {
+			background: #FFFFFF;
+		}
+
+		#italic {
+			font-style: italic;
+		}
+
+		#tab {
+			border: 1px solid rgb(187, 187, 203);
+			border-spacing: 0;
+		}
+
+		#table {
+			border: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_top {
+			border-top: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_left {
+			border-left: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_left_right {
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_right {
+			border-right: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_bottom {
+			border-bottom: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_bottom_left {
+			border-bottom: 1px solid black;
+			border-left: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_bottom_right {
+			border-bottom: 1px solid black;
+			border-right: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		#table_bottom_left_right {
+			border-bottom: 1px solid black;
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+	</style>
+</head>
+<body docx="true" postdata="true" xmargin-left="1cm" xmargin-right="1cm" xmargin-top="1cm" xmargin-bottom="1cm" paper-size="A4">
+	<div name="Page" class="Section1">
+		<table border="0" cellpadding="1" cellspacing="0" width="100%">
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22"><b>3. Các cơ quan: </b></td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Tuần hoàn:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="tuan_hoan" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Hô hấp:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="ho_hap" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Tiêu hóa:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="tieu_hoa" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Thận - Tiết niệu - Sinh dục:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="than_tietnieusd" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Thần kinh:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="than_kinh" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Cơ - Xương- Khớp:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="co_xuongkhop" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Tai - Mũi- Họng:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="tai_muihong" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Răng - Hàm- Mặt:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="rang_hammat" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Mắt:</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="doi_mat" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">+ Nội tiết, dinh dưỡng và các bệnh lý khác: </td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="noi_tiet" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<b>4. Các xét nghiệm cận lâm sàng cần làm: </b>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="xet_nghiemcls" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<b>5. Tóm tắt bệnh án:</b>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="tom_tatba" value=""></div>
+				</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="1" cellspacing="0" width="100%">
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<b>IV. Chẩn đoán khi vào khoa điều trị</b>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="3">+ Bệnh chính:</td>
+				<td width="10%" colspan="19"><input type="text" name="chan_doan_vao_vien" size="95" value="" /></td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="5">+ Bệnh kèm theo (nếu có): </td>
+				<td width="10%" colspan="17"><input type="text" name="benh_kem11" size="91" value="" /></td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="3">+ Phân biệt:</td>
+				<td width="10%" colspan="19"><input type="text" name="phan_biet" size="95" value="" /></td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<b>V. Tiên lượng:</b>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="tien_luong" value=""></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<b>VI. Hướng điều trị:</b>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="22">
+					<div #first name="huong_dieutri" value=""></div>
+				</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="1" cellspacing="0" width="100%">
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="6" align="center"> <input type="text" name="kinh_gui" size="35"
+						style="text-align:center; font-style: italic;" /></td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="6" align="center" style="font-weight:bold">Bác sỹ làm bệnh án</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="6" align="center" style="font-weight:bold">
+					<widget type="signature" name="ba_ng3_chyky_bsba" xmargin-left="0.4cm" xmargin-top="0.2cm" />
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="8"></td>
+				<td width="10%" colspan="6" align="center">
+					<div #first name="ba_ng3_hoten_bsba" type="text" value="Họ và tên: "></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+				<td width="10%" align="left">&emsp;</td>
+			</tr>
+		</table>
+	
+	</div>
+	<div name="Page2">
+		<div>
+</body>
+</html>
